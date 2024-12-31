@@ -1,0 +1,111 @@
+.App {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: calc(10px + 0.5vw); /* 1em + 0.5vw */
+  
+}
+
+
+.App-header {
+  /* background-color: #282c34; */
+  /* min-height: 20vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: darkred;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 13.5%);
+  gap: 10px;
+  /* align-content: center; */
+  justify-content: center;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+
+.day {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 300px;
+  text-align: center !important;
+  justify-content: center !important;
+  /* width: 200px; */
+  background-color: white;
+}
+
+.dayNumber {
+  font-size: 2em;
+  font-weight: 500;
+  text-align: right !important;
+  color: gray;
+}
+
+.dayTitle {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform:uppercase;
+  font-size: 0.7em;
+  font-weight:100;
+  font-style: italic;
+  text-align: left !important;
+  color: black;
+}
+
+
+.feasts {
+  /* font-size: calc(10px + 0.2vw);  */
+  /* font-weight: 200; */
+  /* font-style: italic; */
+  /* text-align: left !important; */
+  /* padding-top: 1em; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform:uppercase;
+  font-size: 0.7em;
+  font-weight:100;
+  font-style: italic;
+  text-align: left !important;
+  color: black;
+}
+/* center weekdays text  */
+.weekdayNames {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  border-radius: 8px;
+  overflow: hidden;  
+}
+
+.fastLevel {
+  font-size: calc(10px + 0.2vw); /* 0.7em + 0.2vw */
+  font-weight: 500;
+  text-align: right !important;
+  /* padding-top: 1em; */
+  font-style: italic;
+  color: rgb(87, 0, 0);
+}
+
+.fastException {
+  font-size: calc(10px + 0.2vw); /* 0.7em + 0.2vw */
+  font-weight: 200;
+  font-style: italic;
+  text-align: right !important;
+  /* padding-top: 1em; */
+  color: rgb(87, 0, 0);
+}
+
+.readings {
+  font-size: calc(10px + 0.2vw); /* 0.7em + 0.2vw */
+  font-weight: 200;
+  font-style: italic;
+  text-align: left !important;
+  padding-top: 1em;
+}
