@@ -58,13 +58,3 @@ The data is transalted with Google's Gemini API and placed within a JSON file. T
        ```shell
        npm run dev
        ```
-
-## How to get and translate day data
-1. Run: 
-   ```shell
-   node getDaysInMonth.js
-   ```
-2. Run:
-   ```shell
-   node translatePerDay.js
-   ```
