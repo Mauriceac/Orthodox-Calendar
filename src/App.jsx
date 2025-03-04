@@ -1,8 +1,8 @@
 import "./App.css";
-import { DAY_DATA_TRANSLATION } from "./dayDataTranslation";
-import DayData from "./DayData";
+import DayData from "./days/spanish/2025-02_translated.json";
+import DayForm from "./DayForm.jsx";
 
-import { MONTH, MONTH_NAME, YEAR } from './variables.js';
+import { month, month_name, year } from './variables.js';
 
 
 function App() {
@@ -24,14 +24,14 @@ function App() {
     return (startingWeekday + 7) % 7;
   }
 
-  const startingWeekday = getStartingWeekday(YEAR, MONTH);
+  const startingWeekday = getStartingWeekday(year, month);
 
   return (
     <>
       <div className="App">
         <header className="App-header">
           {/* <h1>Calendario Ortodoxo</h1> */}
-          <h2>{MONTH_NAME + " " + YEAR}</h2>
+          <h2>{month_name + " " + year}</h2>
         </header>
         <main>
           <div className="calendar">
@@ -44,8 +44,8 @@ function App() {
             {Array.from({ length: startingWeekday }).map((_, index) => (
               <div key={`empty-${index}`} className="emptyDay"></div>
             ))}
-            {DAY_DATA_TRANSLATION.map((day) => (
-              <DayData key={day.day} {...day} />
+            {DayData.map((day) => (
+              <DayForm key={day.day} {...day} />
             ))}
           </div>
         </main>

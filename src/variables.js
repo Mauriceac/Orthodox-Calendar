@@ -1,3 +1,3 @@
-export const MONTH = '01';
-export const YEAR = '2025';
-export const MONTH_NAME = "Enero";
+export const month = '04';
+export const year = '2025';
+export const month_name = "Abril";
